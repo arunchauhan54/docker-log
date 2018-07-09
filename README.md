@@ -11,7 +11,7 @@
 docker build . -t dockerfile 
 
 #### Run Image with argument and map a volume
-docker run --name="dockerfile" --publish 8080:8080 -v /tmp:/tmp -e temp=app.log dockerfile
+docker run --name="dockerfile" --publish 8080:8080 -v /tmp:/tmp -e temp=/tmp/app.log dockerfile
 
 
 ## Other commands
